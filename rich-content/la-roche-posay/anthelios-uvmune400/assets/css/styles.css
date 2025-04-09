@@ -680,6 +680,17 @@
   #es-rc #es-rc-content .es-ingredience .es-ingredience__list {
     flex-direction: row;
   }
+  #es-rc #es-rc-content .es-ingredience .es-ingredience__single--text {
+    padding-top: 20px;
+  }
+  #es-rc #es-rc-content .es-ingredience .es-ingredience__single {
+    display: flex;
+    flex-direction: column;
+  }
+  #es-rc #es-rc-content .es-ingredience .es-ingredience__hand {
+    display: flex;
+    align-items: center;
+  }
   #es-rc #es-rc-content .es-duo {
     margin-top: 40px;
   }
