@@ -1,4 +1,5 @@
-const accTab = document.querySelectorAll('#es-rc #es-rc-content .acc-tab');
+const baseWrapperSelector = '#es-rc #es-rc-content';
+const accTab = document.querySelectorAll(baseWrapperSelector + ' .acc-tab');
 
 for (let i = 0; i < accTab.length; i++) {
   accTab[i].addEventListener('click', function () {
@@ -23,8 +24,6 @@ for (let i = 0; i < accTab.length; i++) {
   });
 }
 
-const baseWrapperSelector = '#es-rc #es-rc-content';
-
 const swiper1Wrapper = baseWrapperSelector + ' .es-cross-mobile';
 const swiper1Selector = swiper1Wrapper + ' .es-swiper1';
 const swiper1 = new Swiper(swiper1Selector, {
@@ -32,12 +31,12 @@ const swiper1 = new Swiper(swiper1Selector, {
   loop: true,
 
   pagination: {
-    el: '#es-rc #es-rc-content .es-swiper1-pagination',
+    el: baseWrapperSelector + ' .es-swiper1-pagination',
   },
 
   navigation: {
-    nextEl: '#es-rc #es-rc-content .es-swiper1-button-next',
-    prevEl: '#es-rc #es-rc-content .es-swiper1-button-prev',
+    nextEl: baseWrapperSelector + ' .es-swiper1-button-next',
+    prevEl: baseWrapperSelector + ' .es-swiper1-button-prev',
   },
 
 });
@@ -49,11 +48,11 @@ const swiper2 = new Swiper(swiper2Selector, {
   loop: true,
 
   pagination: {
-    el: '#es-rc #es-rc-content .es-swiper2-pagination',
+    el: baseWrapperSelector + ' .es-swiper2-pagination',
   },
 
   navigation: {
-    nextEl: '#es-rc #es-rc-content .es-swiper2-button-next',
-    prevEl: '#es-rc #es-rc-content .es-swiper2-button-prev',
+    nextEl: baseWrapperSelector + ' .es-swiper2-button-next',
+    prevEl: baseWrapperSelector + ' .es-swiper2-button-prev',
   },
 });

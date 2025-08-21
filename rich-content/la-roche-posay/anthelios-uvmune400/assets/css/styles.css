@@ -586,7 +586,7 @@
   margin: auto 0;
   transition: all 0.3s ease-out;
 }
-#es-rc #es-rc-content .active .es-accordion__arrow {
+#es-rc #es-rc-content .es-active .es-accordion__arrow {
   transform: rotate(180deg);
 }
 #es-rc #es-rc-content .es-accordion__checkbox {
